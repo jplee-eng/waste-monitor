@@ -1,0 +1,6 @@
+.gitignore:
+waste-monitor
+*.db
+.idea/
+.vscode/
+.DS_Store
