@@ -6,6 +6,9 @@ run:
 build:
 	go build -o waste-monitor cmd/server/main.go
 
+test:
+	go run cmd/test/main.go
+
 clean:
 	rm -f waste-monitor
 	rm -f waste_monitor.db
