@@ -12,6 +12,26 @@ simple waste bin monitoring system using [LoRa](https://en.wikipedia.org/wiki/Lo
 - data persistence with sqlite
 - tiny interface and only sqlite for dependencies
 
+bin ultrasonic -- bin esp32 --> gateway esp32 -- WiFi --> server -- SSE --> browser
+
+### 🚧 Bin sensor
+
+- within the waste bin and battery powered
+- ESP32 with LoRa module
+- ultrasonic sensor with deep sleep and waterproofing
+- sends readings every 30 minutes
+
+### 🚧 Gateway
+
+- within building in line of sight of the bin, with network access
+- ESP32 with LoRa module
+- receives LoRa signals and forwards them to server
+
+### Server
+
+- go backend with sqlite
+- instant delivery of bin sensor readings via SSE
+
 ## Development
 
 use the Makefile for easy dev
